@@ -88,7 +88,7 @@ export function CheckpointScreen({ cpKey }: { cpKey: CheckpointKey }) {
         lines={cp.clueLines}
         meta={
           cpKey === "coffeebar"
-            ? "Walk there · then show this screen at our Booth"
+            ? "Return to our Booth - do not scan the start QR again"
             : "Walk there · then scan the next QR code"
         }
       />

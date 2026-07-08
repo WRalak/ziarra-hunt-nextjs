@@ -22,8 +22,8 @@ export default function QrCodesPage() {
   const stops: StopInfo[] = [
     {
       place: "Our Booth (start)",
-      scanAt: "Place this QR code at our Booth to send students to Clue 1",
-      url: `${origin}/`,
+      scanAt: "Place this start QR at our Booth. It resets old progress and sends students to Clue 1.",
+      url: `${origin}/start`,
     },
     ...CHECKPOINTS.map((cp) => ({
       place: cp.place,
@@ -39,8 +39,8 @@ export default function QrCodesPage() {
         Printable QR codes
       </h1>
       <p className="subtitle" style={{ marginBottom: 24 }}>
-        One code per stop. Students scan the Booth QR first, then follow the clues through the
-        Library, Oval Building, MSB, Coffee Bar, and back to our Booth.
+        One code per stop. Students scan the Booth start QR first, then follow the clues through
+        the Library, Oval Building, MSB, Coffee Bar, and back to our Booth for verification.
       </p>
 
       <div className="qr-grid">

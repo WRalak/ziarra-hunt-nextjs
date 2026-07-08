@@ -9,12 +9,12 @@ separate page loads that happen every time someone scans a new QR code.
 
 | Stop | URL | What happens |
 |---|---|---|
-| **Our Booth** (start) | `/` | Students scan the Booth QR code, tap **Start the Hunt**, and receive **Clue 1** directing them to the Library. |
+| **Our Booth** (start) | `/start` | Students scan the Booth start QR code. It resets stale progress on that phone and shows **Clue 1** directing them to the Library. |
 | **Library** | `/library` | Scanning stamps "Knowledge Explorer" and reveals **Clue 2** (Library to Oval Building). |
 | **Oval Building** | `/oval` | Scanning stamps "Campus Explorer" and reveals **Clue 3** (Oval Building to MSB). |
 | **Management Science Building (MSB)** | `/msb` | Scanning stamps "Future Leader" and reveals **Clue 4** (MSB to Coffee Bar). |
 | **Coffee Bar** | `/coffee-bar` | Scanning stamps "Community Connector" and reveals **Clue 5** (Coffee Bar back to our Booth). |
-| **Our Booth** (finish) | `/` | Once all 4 checkpoint stamps are collected, `/` automatically shows the trophy/prize screen with a **Staff: Verify Completion** button. |
+| **Our Booth** (finish) | `/` | Once all 4 checkpoint stamps are collected, `/` automatically shows the trophy/prize screen with a **Staff: Verify Completion** button. Students should not scan the start QR again at finish. |
 
 The clue text lives in `lib/checkpoints.ts`.
 
@@ -25,7 +25,7 @@ screen instead of skipping ahead.
 ## Print your QR codes
 
 Visit **`/qr-codes`** after deploying. It lists every stop with a printable
-QR code pointing at the live URL for that page: Booth, Library, Oval Building,
+QR code pointing at the live URL for that page: Booth start, Library, Oval Building,
 MSB, and Coffee Bar. Print those and place them at each location.
 
 ## Project structure

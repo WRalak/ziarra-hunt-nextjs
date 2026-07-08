@@ -21,6 +21,11 @@ const DEFAULT_PROGRESS: HuntProgress = {
   verified: false,
 };
 
+const FRESH_STARTED_PROGRESS: HuntProgress = {
+  ...DEFAULT_PROGRESS,
+  started: true,
+};
+
 const STORAGE_KEY = "ziarra-hunt-progress";
 
 function readStorage(): HuntProgress {
@@ -77,6 +82,11 @@ export function useHuntProgress() {
     setProgress(DEFAULT_PROGRESS);
   }, []);
 
+  const startFresh = useCallback(() => {
+    writeStorage(FRESH_STARTED_PROGRESS);
+    setProgress(FRESH_STARTED_PROGRESS);
+  }, []);
+
   const completedCount = CHECKPOINTS.filter((c) => progress[c.key]).length;
   const progressPct = Math.round((completedCount / CHECKPOINTS.length) * 100);
   const isComplete = completedCount === CHECKPOINTS.length;
@@ -104,6 +114,7 @@ export function useHuntProgress() {
     hydrated,
     update,
     reset,
+    startFresh,
     completedCount,
     progressPct,
     isComplete,
