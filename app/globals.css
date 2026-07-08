@@ -1054,6 +1054,189 @@ a {
   display: inline-flex;
 }
 
+@media (max-width: 420px) {
+  :root {
+    --radius-lg: 22px;
+    --radius-md: 16px;
+    --radius-sm: 12px;
+  }
+
+  #stage {
+    width: 100%;
+    min-height: 100svh;
+    padding: 0 14px 116px;
+    box-shadow: none;
+  }
+
+  .topbar {
+    padding: calc(12px + env(safe-area-inset-top)) 0 12px;
+    gap: 10px;
+  }
+
+  .brand {
+    min-width: 0;
+    font-size: 13px;
+  }
+
+  .stamp-pill {
+    flex-shrink: 0;
+    padding: 7px 10px 7px 8px;
+  }
+
+  .hero-visual {
+    height: 156px;
+    margin-bottom: 18px;
+  }
+
+  .h1-title {
+    font-size: 28px;
+    line-height: 1.12;
+  }
+
+  .subtitle {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .card,
+  .prize-card,
+  .qr-card {
+    padding: 18px;
+  }
+
+  .prize-card h2 {
+    font-size: 20px;
+  }
+
+  .prize-card .fest-name {
+    font-size: 14px;
+  }
+
+  .fest-poster {
+    height: 82px;
+    padding: 0 14px;
+  }
+
+  .fest-poster .fp-txt .b {
+    font-size: 15px;
+  }
+
+  .hiw-grid,
+  .final-badges,
+  .stamp-grid {
+    gap: 10px;
+  }
+
+  .hiw-card {
+    min-width: 0;
+    padding: 13px 12px;
+  }
+
+  .hiw-card .t {
+    font-size: 12.5px;
+  }
+
+  .hiw-card .d {
+    font-size: 11px;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    min-height: 52px;
+    padding: 14px 18px;
+    font-size: 14px;
+  }
+
+  .clue-card {
+    padding: 24px 18px;
+  }
+
+  .clue-glyph {
+    width: 62px;
+    height: 62px;
+    border-radius: 18px;
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+
+  .clue-riddle {
+    font-size: 16px;
+    line-height: 1.48;
+  }
+
+  .clue-meta {
+    font-size: 10px;
+    line-height: 1.45;
+  }
+
+  .location-visual {
+    height: 132px;
+  }
+
+  .badge-unlock {
+    padding: 14px;
+  }
+
+  .badge-unlock .bic {
+    width: 46px;
+    height: 46px;
+  }
+
+  .passport-book {
+    max-height: min(88svh, 680px);
+    padding: 22px 18px calc(26px + env(safe-area-inset-bottom));
+  }
+
+  .passport-head h2 {
+    font-size: 18px;
+  }
+
+  .passport-id {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .stamp-ink .st {
+    font-size: 7.5px;
+  }
+
+  .fab {
+    bottom: calc(14px + env(safe-area-inset-bottom));
+    max-width: calc(100vw - 28px);
+  }
+
+  .qr-shell {
+    width: min(100%, 196px);
+    justify-content: center;
+  }
+
+  .qr-shell svg {
+    width: 100%;
+    max-width: 168px;
+    height: auto;
+  }
+}
+
+@media (max-width: 340px) {
+  #stage {
+    padding-inline: 10px;
+  }
+
+  .h1-title {
+    font-size: 25px;
+  }
+
+  .hiw-grid,
+  .final-badges,
+  .stamp-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .clue-riddle {
+    font-size: 15px;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

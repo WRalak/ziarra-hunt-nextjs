@@ -4,7 +4,12 @@ import { HuntShell } from "@/components/HuntShell";
 
 export const metadata: Metadata = {
   title: "Ziarra Scavenger Hunt",
-  description: "Explore campus. Solve clues. Win big — the Ziarra Scavenger Hunt.",
+  description: "Explore campus. Solve clues. Win big - the Ziarra Scavenger Hunt.",
+  icons: {
+    icon: "/ziarra-logo.jpg",
+    shortcut: "/ziarra-logo.jpg",
+    apple: "/ziarra-logo.jpg",
+  },
 };
 
 export const viewport: Viewport = {
