@@ -22,7 +22,7 @@ export default function QrCodesPage() {
   const stops: StopInfo[] = [
     {
       place: "Our Booth (start)",
-      scanAt: "Place this start QR at our Booth. It resets old progress and sends students to Clue 1.",
+      scanAt: "Place this start QR at our Booth. Students tap Start Fresh Hunt to reset old progress and reveal Clue 1.",
       url: `${origin}/start`,
     },
     ...CHECKPOINTS.map((cp) => ({

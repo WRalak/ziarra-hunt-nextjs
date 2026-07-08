@@ -333,6 +333,42 @@ a {
   font-weight: 600;
 }
 
+.event-brief {
+  margin-bottom: 22px;
+  padding: 18px;
+  border-radius: var(--radius-md);
+  background: linear-gradient(140deg, rgba(0, 207, 193, 0.1), rgba(255, 184, 0, 0.08));
+  border: 1px solid rgba(0, 207, 193, 0.24);
+}
+.event-brief-title {
+  font-family: var(--font-sora), sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 8px;
+}
+.event-brief p {
+  color: var(--muted);
+  font-size: 13.5px;
+  line-height: 1.55;
+}
+.route-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 14px;
+}
+.route-strip span {
+  color: var(--ink);
+  background: var(--gold);
+  border-radius: 999px;
+  padding: 6px 9px;
+  font-size: 11px;
+  font-weight: 800;
+}
+
 .prize-card {
   border-radius: var(--radius-lg);
   padding: 22px;
@@ -379,31 +415,20 @@ a {
   margin-top: 16px;
   border-radius: var(--radius-md);
   overflow: hidden;
-  height: 96px;
+  aspect-ratio: 1 / 1;
+  min-height: 0;
   position: relative;
-  background: repeating-linear-gradient(135deg, rgba(0, 207, 193, 0.14) 0 10px, transparent 10px 20px),
-    linear-gradient(120deg, #14211f, #101414);
-  border: 1px solid rgba(0, 207, 193, 0.25);
+  background: #ffffff;
+  border: 1px solid rgba(255, 184, 0, 0.24);
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0 18px;
+  justify-content: center;
 }
-.fest-poster .fp-txt {
-  font-family: var(--font-sora), sans-serif;
-}
-.fest-poster .fp-txt .k {
+.fest-poster img {
   display: block;
-  font-size: 10px;
-  letter-spacing: 0.14em;
-  color: var(--teal);
-  font-weight: 700;
-  text-transform: uppercase;
-}
-.fest-poster .fp-txt .b {
-  font-size: 18px;
-  font-weight: 800;
-  color: var(--white);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .howitworks {
@@ -1113,12 +1138,7 @@ a {
   }
 
   .fest-poster {
-    height: 82px;
-    padding: 0 14px;
-  }
-
-  .fest-poster .fp-txt .b {
-    font-size: 15px;
+    margin-top: 14px;
   }
 
   .hiw-grid,

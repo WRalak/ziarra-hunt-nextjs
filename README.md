@@ -9,7 +9,7 @@ separate page loads that happen every time someone scans a new QR code.
 
 | Stop | URL | What happens |
 |---|---|---|
-| **Our Booth** (start) | `/start` | Students scan the Booth start QR code. It resets stale progress on that phone and shows **Clue 1** directing them to the Library. |
+| **Our Booth** (start) | `/start` | Students scan the Booth start QR code, land on the event page, then tap **Start Fresh Hunt** to reset stale progress and reveal **Clue 1** directing them to the Library. |
 | **Library** | `/library` | Scanning stamps "Knowledge Explorer" and reveals **Clue 2** (Library to Oval Building). |
 | **Oval Building** | `/oval` | Scanning stamps "Campus Explorer" and reveals **Clue 3** (Oval Building to MSB). |
 | **Management Science Building (MSB)** | `/msb` | Scanning stamps "Future Leader" and reveals **Clue 4** (MSB to Coffee Bar). |
