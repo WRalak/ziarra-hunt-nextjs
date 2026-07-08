@@ -333,42 +333,6 @@ a {
   font-weight: 600;
 }
 
-.event-brief {
-  margin-bottom: 22px;
-  padding: 18px;
-  border-radius: var(--radius-md);
-  background: linear-gradient(140deg, rgba(0, 207, 193, 0.1), rgba(255, 184, 0, 0.08));
-  border: 1px solid rgba(0, 207, 193, 0.24);
-}
-.event-brief-title {
-  font-family: var(--font-sora), sans-serif;
-  font-size: 12px;
-  font-weight: 800;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--teal);
-  margin-bottom: 8px;
-}
-.event-brief p {
-  color: var(--muted);
-  font-size: 13.5px;
-  line-height: 1.55;
-}
-.route-strip {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 7px;
-  margin-top: 14px;
-}
-.route-strip span {
-  color: var(--ink);
-  background: var(--gold);
-  border-radius: 999px;
-  padding: 6px 9px;
-  font-size: 11px;
-  font-weight: 800;
-}
-
 .prize-card {
   border-radius: var(--radius-lg);
   padding: 22px;

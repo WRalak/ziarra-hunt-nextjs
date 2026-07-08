@@ -57,22 +57,6 @@ export function LandingScreen({
         Explore campus. <b>Solve clues.</b> Win free festival tickets.
       </p>
 
-      <div className="event-brief">
-        <div className="event-brief-title">First scan briefing</div>
-        <p>
-          You are starting at the Ziarra booth. Tap the button below to begin, then follow each
-          clue to the next location and scan the QR code you find there.
-        </p>
-        <div className="route-strip" aria-label="Hunt route">
-          <span>Booth</span>
-          <span>Library</span>
-          <span>Oval</span>
-          <span>MSB</span>
-          <span>Coffee Bar</span>
-          <span>Booth</span>
-        </div>
-      </div>
-
       <PrizeCard />
 
       <div className="howitworks">
