@@ -40,7 +40,7 @@ export default function QrCodesPage() {
       </h1>
       <p className="subtitle" style={{ marginBottom: 24 }}>
         One code per stop. Students scan the Booth start QR first, then follow the clues through
-        the Library, Oval Building, MSB, Coffee Bar, and back to our Booth for verification.
+        the Auditorium, Oval Building, MSB, Coffee Bar, and back to our Booth for verification.
       </p>
 
       <div className="qr-grid">

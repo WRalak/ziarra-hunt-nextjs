@@ -70,7 +70,7 @@ export function LandingScreen({
           <div className="hiw-card">
             <span className="ic">2</span>
             <div className="t">Read the clue</div>
-            <div className="d">Your first clue sends you to the Library.</div>
+            <div className="d">Your first clue sends you to the Auditorium.</div>
           </div>
           <div className="hiw-card">
             <span className="ic">3</span>

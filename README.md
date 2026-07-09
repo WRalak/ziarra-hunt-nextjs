@@ -9,8 +9,8 @@ separate page loads that happen every time someone scans a new QR code.
 
 | Stop | URL | What happens |
 |---|---|---|
-| **Our Booth** (start) | `/start` | Students scan the Booth start QR code, land on the event page, then tap **Start Fresh Hunt** to reset stale progress and reveal **Clue 1** directing them to the Library. |
-| **Library** | `/library` | Scanning stamps "Knowledge Explorer" and reveals **Clue 2** (Library to Oval Building). |
+| **Our Booth** (start) | `/start` | Students scan the Booth start QR code, land on the event page, then tap **Start Fresh Hunt** to reset stale progress and reveal **Clue 1** directing them to the Auditorium. |
+| **Auditorium** | `/library` | Scanning stamps "Knowledge Explorer" and reveals **Clue 2** (Auditorium to Oval Building). |
 | **Oval Building** | `/oval` | Scanning stamps "Campus Explorer" and reveals **Clue 3** (Oval Building to MSB). |
 | **Management Science Building (MSB)** | `/msb` | Scanning stamps "Future Leader" and reveals **Clue 4** (MSB to Coffee Bar). |
 | **Coffee Bar** | `/coffee-bar` | Scanning stamps "Community Connector" and reveals **Clue 5** (Coffee Bar back to our Booth). |
@@ -19,13 +19,13 @@ separate page loads that happen every time someone scans a new QR code.
 The clue text lives in `lib/checkpoints.ts`.
 
 Checkpoints are gated: if someone scans, say, the MSB QR code without having
-scanned the Library and Oval ones first, they'll see a friendly "not so fast"
+scanned the Auditorium and Oval ones first, they'll see a friendly "not so fast"
 screen instead of skipping ahead.
 
 ## Print your QR codes
 
 Visit **`/qr-codes`** after deploying. It lists every stop with a printable
-QR code pointing at the live URL for that page: Booth start, Library, Oval Building,
+QR code pointing at the live URL for that page: Booth start, Auditorium, Oval Building,
 MSB, and Coffee Bar. Print those and place them at each location.
 
 ## Project structure
@@ -33,7 +33,7 @@ MSB, and Coffee Bar. Print those and place them at each location.
 ```text
 app/
   page.tsx              Booth home - hero / active clue / finish screen
-  library/page.tsx      Checkpoint page backed by CheckpointScreen
+  library/page.tsx      Checkpoint page backed by CheckpointScreen (Auditorium stop)
   oval/page.tsx         Checkpoint page backed by CheckpointScreen
   msb/page.tsx          Checkpoint page backed by CheckpointScreen
   coffee-bar/page.tsx   Checkpoint page backed by CheckpointScreen

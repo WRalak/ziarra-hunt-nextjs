@@ -37,7 +37,7 @@ export default function StartPage() {
       />
       <div style={{ height: 24 }} />
       <ProgressBar pct={0} />
-      <div className="footer-tiny">Clue 1 is active. Head to the Library and scan the QR code there.</div>
+      <div className="footer-tiny">Clue 1 is active. Head to the Auditorium and scan the QR code there.</div>
     </div>
   );
 }

@@ -8,33 +8,33 @@ export interface Checkpoint {
   icon: string; // emoji glyph
   accent: "teal" | "gold";
   arrivalLine: string; // shown when the badge unlocks
-  clueTitle: string; // "Clue 2: From the Library to the Oval Building"
+  clueTitle: string; // "Clue 2: From the Auditorium to the Oval Building"
   clueLines: string[]; // the riddle, split into lines/stanzas
   destination: string; // where this clue sends them next
 }
 
-// Clue 1 — shown at the Booth before the hunt starts. Sends explorers to the Library.
+// Clue 1 — shown at the Booth before the hunt starts. Sends explorers to the Auditorium.
 export const INTRO_CLUE = {
-  title: "Clue 1: From the Booth to the Library",
+  title: "Clue 1: From the Booth to the Auditorium",
   lines: [
-    "You start your journey right where we stand,",
-    "But your first true target is a quiet land.",
-    "Where thousands of pages hold history and tales,",
-    "And a strict rule of silence usually prevails.",
+    "Your adventure begins where voices rise,",
+    "Where ideas come alive before many eyes.",
+    "But don’t stop where everyone can see,",
+    "The next step is waiting quietly behind me.",
   ],
-  destination: "the Library",
+  destination: "the Auditorium",
 };
 
 export const CHECKPOINTS: Checkpoint[] = [
   {
     key: "library",
     path: "/library",
-    place: "the Library",
+    place: "the Auditorium",
     badge: "Knowledge Explorer",
     icon: "📚",
     accent: "teal",
-    arrivalLine: "You found the Library — quiet halls, endless pages.",
-    clueTitle: "Clue 2: From the Library to the Oval Building",
+    arrivalLine: "You found the Auditorium — where every big idea gets its stage.",
+    clueTitle: "Clue 2: From the Auditorium to the Oval Building",
     clueLines: [
       "Knowledge secured, now look all around,",
       "For a structure where no sharp corners are found.",
