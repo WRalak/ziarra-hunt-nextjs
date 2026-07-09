@@ -83,15 +83,7 @@ export function CheckpointScreen({ cpKey }: { cpKey: CheckpointKey }) {
       <ProgressBar pct={progressPct} />
 
       <div className="eyebrow">{cp.clueTitle}</div>
-      <ClueCard
-        icon={cpKey === "coffeebar" ? "🏁" : "🧭"}
-        lines={cp.clueLines}
-        meta={
-          cpKey === "coffeebar"
-            ? "Return to our Booth - do not scan the start QR again"
-            : "Walk there · then scan the next QR code"
-        }
-      />
+      <ClueCard icon={cpKey === "coffeebar" ? "🏁" : "🧭"} lines={cp.clueLines} />
 
       <div style={{ height: 16 }} />
       {cpKey === "coffeebar" ? (

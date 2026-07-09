@@ -33,7 +33,6 @@ export default function StartPage() {
       <ClueCard
         icon={"\uD83D\uDEA9"}
         lines={INTRO_CLUE.lines}
-        meta={`Find ${INTRO_CLUE.destination} · then scan the QR code there`}
       />
       <div style={{ height: 24 }} />
       <ProgressBar pct={0} />

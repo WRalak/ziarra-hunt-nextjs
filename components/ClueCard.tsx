@@ -2,12 +2,10 @@ export function ClueCard({
   icon,
   title,
   lines,
-  meta,
 }: {
   icon: string;
   title?: string;
   lines: string[];
-  meta?: string;
 }) {
   return (
     <div className="card clue-card float">
@@ -25,7 +23,6 @@ export function ClueCard({
         )}
         <span className="q">Where am I?</span>
       </div>
-      {meta && <div className="clue-meta">{meta}</div>}
     </div>
   );
 }

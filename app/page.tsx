@@ -33,20 +33,16 @@ function ClueScreen() {
   // otherwise the "next destination" clue handed out at the last checkpoint reached.
   const activeClue =
     completedCount === 0
-      ? { eyebrow: INTRO_CLUE.title, icon: "\uD83D\uDEA9", lines: INTRO_CLUE.lines, dest: INTRO_CLUE.destination }
+      ? { eyebrow: INTRO_CLUE.title, icon: "\uD83D\uDEA9", lines: INTRO_CLUE.lines }
       : (() => {
           const cp = CHECKPOINTS[completedCount - 1];
-          return { eyebrow: cp.clueTitle, icon: cp.icon, lines: cp.clueLines, dest: cp.destination };
+          return { eyebrow: cp.clueTitle, icon: cp.icon, lines: cp.clueLines };
         })();
 
   return (
     <div className="screen fade-pop">
       <div className="eyebrow">{activeClue.eyebrow}</div>
-      <ClueCard
-        icon={activeClue.icon}
-        lines={activeClue.lines}
-        meta={`Find ${activeClue.dest} · then scan the QR code there`}
-      />
+      <ClueCard icon={activeClue.icon} lines={activeClue.lines} />
       <div style={{ height: 24 }} />
       <ProgressBar pct={progressPct} />
       <div className="footer-tiny">Lost? Come back to this screen any time from the Booth.</div>
